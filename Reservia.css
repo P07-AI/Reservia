@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/static/Raleway-Regular.ttf');
+}
+
+body {
+    font-family: 'Raleway';
+    background-color: white;
+}
+img {
+    max-width:300px;
+    max-height: 300px;
+  }
+
+/*----- main grid -----*/
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    
+            }
+
+.container > div {
+display: flex;
+}
+/*----- general -----*/
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 0.7em;
+    font-weight: lighter;
+}
+
+/*----- header -----*/
+.header{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+
+/*barre boutons haut*/
+.header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav ul li {
+    padding: 23px 30px;
+    border: transparent solid;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.header nav ul li:hover {
+    border-top: #0065FC solid;
+}
+.header nav ul li:first-child a {
+    font-weight: lighter;
+    color: #0065FC;  
+}
+
+.header nav ul li:nth-child(2) a {
+    font-weight: lighter;
+    color: black;  
+}
+
+.header nav ul li:last-child a {
+    font-weight: bold;
+    color: #0065FC;
+    
+}
+
+
+
+/*----- Section Searchbar + filtres ----- */
+
+.filtres {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    
+}
+/*-- Searchbar-- */
+
+#searchbar {
+    margin: 15px 0 20px 0;
+    display: flex;
+}
+
+.search_button {
+    display: block;
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+    color: #F2F2F2;
+    margin-left: -2px;
+    padding: 8px;
+}
+
+.fa-map-marker-alt {
+    display: block;
+    background-color:#F2F2F2;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: 1px solid #F2F2F2;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    margin-right: -2px;
+}
+
+
+
+/*-- Filtres -- */
+#filters{
+    margin-top: 10px;
+    display: flex;
+    align-items: center; 
+}
+
+#filters > p {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.filters:hover button, .filters:hover {
+    background-color: #DEEBFF;
+}
+
+.filters {
+    margin: 0 5px;
+    border: 2px solid #F2F2F2;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.filterbutton {
+    border: none;
+    background-color: white;
+    border-radius: 40px;
+    
+}
+
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+    height: 30px;
+    width: 30px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    text-align: center;
+    border-radius: 50%;
+    border-radius: 80%;
+    margin-left: -2px;
+    
+}
+
+
+#disponibles{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.fa-info-circle {
+    margin: 10px 10px 10px 0;
+}
+.fa-info-circle, .fa-star {
+    color: #0065FC;
+
+}
+
+/*------------------ END Section filtres End -----------------*/
+
+.hebergement {
+    grid-column: 1 / 7;
+    width: 100%;
+    margin: 15px 15px 15px 0;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    background-color: #F2F2F2;
+    flex-direction: column;
+}
+
+.hebergement h3 {
+    margin: 30px 0 0 30px;
+}
+
+.cards {
+    padding: 30px 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.hotel {
+    background-color: white;
+    border: 20px;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 6px silver;
+}
+
+.hotel figure img {
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 70px;
+    width: 100%;
+    object-fit: cover;
+}
+
+figcaption, .prix, .rating{
+    font-size: 0.8em;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+
+.pluspopulaires {
+    grid-column: 8 / -1;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin: 15px 0 15px 15px;
+}
+
+
+
+
+
+
+.activites {
+    grid-column: 1 / -1;
+}
+
+.footer {
+    grid-column: 1 / -1; 
+}
+
+
+#filters{
+    display: flex;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pluspopulaires{
+    display: flex;
+    flex-direction: column;
+}
