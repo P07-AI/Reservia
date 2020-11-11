@@ -6,19 +6,23 @@
 body {
     font-family: 'Raleway';
     background-color: white;
+    margin: auto;
 }
-img {
-    max-width:300px;
-    max-height: 300px;
-  }
+
+p{
+    color: black;
+}
+
 
 /*----- main grid -----*/
 .container {
     display: grid;
-    grid-gap: 3px;
+    grid-gap: 20px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto auto;
-    
+    grid-template-rows: auto auto auto auto;
+    margin: -15px 15px 0px 15px;
+    max-width: 1170px;
+    margin: auto;
             }
 
 .container > div {
@@ -40,23 +44,33 @@ h2 {
     font-weight: lighter;
 }
 
+
 /*----- header -----*/
 .header{
-    grid-column: 1 / -1;
+    grid-column: 1 / 6;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+}
 
+#logo{
+    position: relative;
+    left: 0px;
+    bottom: -20px;
 }
 
 
 /*barre boutons haut*/
-.header nav ul {
+
+.navi {
+    grid-column: 6 / 11;
+    display: flex;
+    align-items: flex-end;
+}
+.navi nav ul {
     display: flex;
     justify-content: space-between;
 }
 
-.header nav ul li {
+.navi nav ul li {
     padding: 23px 30px;
     border: transparent solid;
     text-decoration: none;
@@ -64,24 +78,44 @@ h2 {
 
 }
 
-.header nav ul li:hover {
+.navi nav ul li:hover {
     border-top: #0065FC solid;
 }
-.header nav ul li:first-child a {
+.navi nav ul li:first-child a {
     font-weight: lighter;
     color: #0065FC;  
+    padding-right: 0px;
 }
 
-.header nav ul li:nth-child(2) a {
+.navi nav ul li:nth-child(2) a {
     font-weight: lighter;
     color: black;  
 }
 
-.header nav ul li:last-child a {
+/*barre boutons haut 2 - s'inscrire*/
+.navi2{
+    grid-column: 11 / -1;
+    display: flex;
+}
+
+.navi2 nav ul li {
+    padding-top: 23px;
+    padding-right: 0px;
+    border: transparent solid;
+    text-decoration: none;
+    list-style-type: none;
+   
+}
+
+.navi2 nav ul li a {
     font-weight: bold;
     color: #0065FC;
-    
 }
+.navi2 nav ul li:hover {
+    border-top: #0065FC solid;
+}
+
+
 
 
 
@@ -91,6 +125,7 @@ h2 {
     grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
+    padding-bottom: 0px;
     
 }
 /*-- Searchbar-- */
@@ -121,96 +156,107 @@ h2 {
     text-align: center;
     border-radius: 10px 0 0 10px;
     margin-right: -2px;
+    
+    
 }
 
 
 
 /*-- Filtres -- */
+
+
 #filters{
     margin-top: 10px;
     display: flex;
     align-items: center; 
+    display: inline-block;
+    
 }
 
 #filters > p {
     font-weight: bold;
     margin-right: 15px;
+    display: inline-block;
 }
 
-.filters:hover button, .filters:hover {
+.filterscase:hover button, .filterscase:hover {
     background-color: #DEEBFF;
 }
 
-.filters {
-    margin: 0 5px;
+.filterscase {
+    margin: 0px 5px;
     border: 2px solid #F2F2F2;
     border-radius: 40px;
     background-color: white;
+    display: inline-block;
 }
 
 .filterbutton {
     border: none;
     background-color: white;
     border-radius: 40px;
-    
+    display: inline-block;
 }
 
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
-    height: 30px;
-    width: 30px;
+    
+
     color: #0065FC;
     background-color: #DEEBFF;
     text-align: center;
     border-radius: 50%;
     border-radius: 80%;
     margin-left: -2px;
-    
+    padding: 8px;
+
 }
 
 
 #disponibles{
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .fa-info-circle {
     margin: 10px 10px 10px 0;
 }
 .fa-info-circle, .fa-star {
     color: #0065FC;
-
 }
+
 
 /*------------------ END Section filtres End -----------------*/
 
 .hebergement {
-    grid-column: 1 / 7;
+    grid-column: 1 / 9;
     width: 100%;
-    margin: 15px 15px 15px 0;
+    margin: 0px 15px 15px 0;
     border-radius: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 0%;
     background-color: #F2F2F2;
     flex-direction: column;
 }
 
 .hebergement h3 {
     margin: 30px 0 0 30px;
+    padding-bottom: 0px;
 }
 
 .cards {
-    padding: 30px 18px;
+    padding: 20px 18px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 25px;
 }
+
 
 .hotel {
     background-color: white;
-    border: 20px;
+    border: 30px;
     border-color: white;
     border-radius: 10px;
-    padding: 5px;
+    padding: 3px;
     box-shadow: 0 4px 6px silver;
 }
 
@@ -219,48 +265,267 @@ h2 {
     border-radius: 10px 10px 0 0;
     height: 70px;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
 figcaption, .prix, .rating{
     font-size: 0.8em;
 }
+.prix{
+    color: dimgrey;
+}
 
 figcaption {
     font-weight: bold;
+    color: black;
+    padding-top: 5px;
+    
 }
 
-
-.pluspopulaires {
-    grid-column: 8 / -1;
-    width: 100%;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    margin: 15px 0 15px 15px;
+#Afficher {
+    font-weight: bold;
+    font-size: 0.8em;
+    color: black;
 }
+/*------------------ Populaires -----------------*/
 
-
-
-
-
-
-.activites {
-    grid-column: 1 / -1;
-}
-
-.footer {
-    grid-column: 1 / -1; 
-}
-
-
-#filters{
-    display: flex;
-}
-.cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 .pluspopulaires{
     display: flex;
     flex-direction: column;
 }
+
+.pluspopulaires {
+    grid-column: 9 / -1;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin: 0px 0px 15px 0px;
+}
+
+.cards2{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    
+}
+
+.cards2 h3{
+    margin: 30px 0 0 30px;
+}
+
+.fa-chart-line {
+    position: relative;
+    top: 15px;
+    right: -51px;
+}
+
+
+.hotel2{
+    background-color: white;
+    margin: 10px;
+    border: 10px;
+    border-color: white;
+    border-radius: 10px;
+    display: flex;
+    padding: 3px;
+}
+
+.hotel2card{
+    display: flex;
+    padding: 0px;
+}
+
+.hotel2 img{
+    display: block;
+    border-radius: 10px 0 0 10px;
+    height: 90px;
+    width: 90px;
+    min-width: 90px;
+    object-fit: cover;
+}
+
+.cardcontent{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 10px;
+}
+
+.cardcontent .rating{
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 5px;
+}
+
+.cardcontent p{
+    padding-top: 5px;
+}
+
+.cardcontent p:first-child {
+    font-weight: bold;
+    font-size: 0.8em;
+    padding-bottom: 0px;
+}
+.card-content p:last-child {
+    font-size: 0.8em;
+}
+
+
+/*------------------ Activities -----------------*/
+.activites {
+    grid-column: 1 / -1;
+    flex-direction: column;
+
+}
+
+
+.row a {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px silver;
+    width: 100%;
+}
+
+.row a:first-child img, .row a:nth-child(4) img {
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.row a:nth-child(2) img, .row a:last-child img {
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.row a:nth-child(3) img, .row a:nth-child(5) img {
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.row a p {
+    margin: 5%;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr) ;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+    padding: 20px 0 20px 0;
+}
+
+.row1{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+
+}
+
+.row2{
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+
+}
+
+.row3{
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3/-1;
+
+}
+
+.row4{
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 1/-1;
+
+}
+
+.row5{
+    display: grid;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+
+}
+
+.row6{
+    display: grid;
+    grid-column: 4 / 5;
+    grid-row: 3 / -1;
+
+}
+
+
+/*------------------ Footer -----------------*/
+.footer {
+    
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    padding: 10px;
+    display: flex;
+    
+
+}
+
+.footer div {
+    padding: 20px;
+    display: block;
+    
+}
+
+h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    
+}
+
+.footer ul{
+    padding: 0px;
+}
+
+.footer div ul li a{
+    color: dimgrey;
+    font-size: 0.6em;
+}
+
+
+/*------------------ Adjustment -----------------*/
+
+img {
+    max-width:100%;
+    max-height: 200px;
+    display: block;
+  } 
+
+ul,
+ol{
+  list-style: none;
+}
+
+p,
+ul
+li,
+figure,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+dl{
+  margin: 0;
+}
+

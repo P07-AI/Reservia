@@ -1,0 +1,177 @@
+
+.wrap
+{
+    margin-top: 0px;
+}
+
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "navi2"
+    "navi"
+    "fil"
+    "pop"
+    "heber"
+    "acti";
+
+}
+
+.header, .hebergement {
+    padding: unset;
+
+}
+
+.header{
+grid-area: header;
+
+}
+
+#logo{
+    position: relative;
+    top: 25px;
+}
+
+.navi2{
+grid-area: navi2;
+position: absolute;
+  top: -15px;
+  right: 16px;
+}
+
+.navi{
+grid-area: navi;
+}
+
+.navi nav {
+    padding-inline-start: 0px;
+    margin-left: -30px;
+}
+
+
+
+.navi nav ul li:hover {
+    border-bottom: #0065FC solid;
+    border-top: none;
+}
+
+
+.filtres{
+grid-area: fil;
+
+}
+
+.filtres div {
+    margin: 2px;
+}
+
+
+.hebergement{
+grid-area: heber;
+}
+
+
+.pluspopulaires{
+grid-area: pop;
+}
+
+.fa-chart-line {
+    position: relative;
+    top: 15px;
+    right: -115px;
+}
+
+
+.activites{
+grid-area: acti;
+}
+
+/*------------------ Hebergement -----------------*/
+
+
+.cards{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "hotel"
+    "hotel"
+    "hotel"
+    "hotel"
+    "hotel"
+    "hotel";
+}
+
+.cards{
+    grid-area: hotel;
+}
+
+/*------------------ Activites -----------------*/
+
+.row{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "row1"
+    "row2"
+    "row3"
+    "row4"
+    "row5"
+    "row6";
+}
+
+.row1{
+    grid-area: row1;
+    display: block;
+    height: 58%;
+    width: 100%;
+}
+.row2{
+    grid-area: row2;
+    display: block;
+    height: 58%;
+    width: 100%;
+}
+.row3{
+    grid-area: row3;
+    display: block;
+    height: 58%;
+    width: 100%;
+}
+.row4{
+    grid-area: row4;
+    display: block;
+    height: 58%;
+    width: 100%;
+}
+.row5{
+    grid-area: row5;
+    display: block;
+    height: 58%;
+    width: 100%;
+}
+.row6{
+    grid-area: row6;
+    display: block;
+    height: 58%;
+    width: 100%;
+}
+
+/*------------------ Footer -----------------*/
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 17px;
+    flex-wrap: wrap;
+}
+
+.footer div {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: unset;
+}
+
+.footer div:last-child {
+    margin-bottom: unset;
+}
