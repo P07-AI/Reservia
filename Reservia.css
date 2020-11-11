@@ -155,11 +155,13 @@ h2 {
     border: 1px solid #F2F2F2;
     text-align: center;
     border-radius: 10px 0 0 10px;
-    margin-right: -2px;
-    
+    margin-right: -2px;  
     
 }
 
+i.fas.fa-map-marker-alt {
+    line-height: 30px;
+}
 
 
 /*-- Filtres -- */
