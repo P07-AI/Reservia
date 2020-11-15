@@ -76,11 +76,7 @@ grid-area: heber;
 grid-area: pop;
 }
 
-.fa-chart-line {
-    position: relative;
-    top: 15px;
-    right: -115px;
-}
+
 
 
 .activites{
@@ -164,6 +160,7 @@ grid-area: acti;
     justify-content: flex-end;
     padding: 17px;
     flex-wrap: wrap;
+    
 }
 
 .footer div {
