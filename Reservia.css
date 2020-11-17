@@ -21,22 +21,26 @@ p{
 
 
 .wrap{
-    margin-top: 0px;
+  margin: auto; 
+  max-width: 1170px;
+  
 }
 .container {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto auto auto;
-    margin: -15px 15px 0px 15px;
+    
     max-width: 1170px;
     margin: auto;
     margin-left: 15px;
     margin-right: 15px;
+    
             }
 
 .container > div {
 display: flex;
+
 }
 /*----- general -----*/
 
@@ -409,7 +413,6 @@ figcaption {
 .activites {
     grid-column: 1 / -1;
     flex-direction: column;
-
 }
 
 
@@ -432,10 +435,17 @@ figcaption {
 max-height: 650px;
 }
 
+.row2 a img{
+    max-height: 220px; 
+}
+
 .row4 a img {
     max-height: 650px;
     }
 
+.row6 a img{
+    max-height: 220px; 
+    }
 
 .row a p {
     margin: 5%;
