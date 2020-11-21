@@ -70,6 +70,10 @@ grid-area: navi;
     line
 }
 
+#filters p{
+width: 100%;
+margin-bottom: 10px;
+}
 
 .filtres{
 grid-area: fil;
