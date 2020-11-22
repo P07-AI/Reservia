@@ -52,7 +52,7 @@ grid-area: navi;
 }
 
 .navi nav {
-    padding-inline-start: 0px;
+    
     width: 100%;
 
 }
@@ -67,7 +67,6 @@ grid-area: navi;
 .navi nav ul li:hover {
     border-bottom: #0065FC solid;
     border-top: none;
-    line
 }
 
 #filters p{
@@ -148,7 +147,8 @@ margin-right: 10px;
 }
 
 .row a img{
-    display: block;
+    min-height: 200px;
+    max-height: none;
     height: 200px;
     
 }

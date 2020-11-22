@@ -144,7 +144,7 @@ h2 {
     
 }
 
-.searchare, h1{
+.searchaera, h1{
  padding-bottom: 10px;
 }
 /*-- Searchbar-- */
@@ -211,6 +211,7 @@ i.fas.fa-map-marker-alt {
     background-color: white;
     display: inline-block;
     height: 40px;
+    margin-bottom: 5px;
 }
 
 .filterbutton {
