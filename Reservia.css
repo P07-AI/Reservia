@@ -223,7 +223,7 @@ i.fas.fa-map-marker-alt {
 }
 
 
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+.fa-money-bill-wave, .fa-heart, .fa-dog {
     
 
     color: #0065FC;
@@ -237,6 +237,17 @@ i.fas.fa-map-marker-alt {
 
 }
 
+.fa-child {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    text-align: center;
+    border-radius: 70%;
+    border-radius: 80%;
+    margin-left: -2px;
+    padding: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 #disponibles{
     display: flex;
@@ -437,12 +448,19 @@ max-height: 650px;
 }
 
 .row2 a img{
-    max-height: 220px; 
+    
+    max-height: 280px; 
 }
-
+.row3 a img{
+    max-height: 120px; 
+}
 .row4 a img {
     max-height: 650px;
     }
+.row5 a img{
+ 
+    max-height: 170px; 
+}
 
 .row6 a img{
     max-height: 220px; 
