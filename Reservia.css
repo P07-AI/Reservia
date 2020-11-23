@@ -165,6 +165,12 @@ h2 {
     padding: 8px;
 }
 
+
+.fa-search {
+    display: none;
+    visibility: hidden;
+}
+
 .fa-map-marker-alt {
     display: block;
     background-color:#F2F2F2;
@@ -449,18 +455,18 @@ max-height: 650px;
 }
 
 .row2 a img{
-    
     max-height: 280px; 
 }
+
 .row3 a img{
     max-height: 120px; 
 }
+
 .row4 a img {
     max-height: 650px;
     }
 
 .row5 a img{
- 
     max-height: 130px; 
 }
 
